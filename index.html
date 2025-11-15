@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>To-Do List App</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Simple To-Do List</h1>
+
+    <form id="task-form" aria-label="Add new task">
+      <input id="task-input" type="text" placeholder="Add a new task..." aria-label="Task description" required />
+      <button id="add-btn" type="submit">Add</button>
+    </form>
+
+    <section class="controls">
+      <span id="counter">0 tasks</span>
+      <button id="clear-completed" class="small-btn">Clear completed</button>
+      <button id="clear-all" class="small-btn">Clear all</button>
+    </section>
+
+    <ul id="task-list" aria-live="polite"></ul>
+
+    <p class="hint">Tip: click a task to toggle complete. Use the trash button to remove.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
